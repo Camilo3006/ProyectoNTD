@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tripify - Login</title>
+<link rel="stylesheet" href="estilos.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body class="login-body">
+
+<div class="overlay"></div>
+
+<div class="login-container fade-in">
+
+    <img src="img/logo.png" class="logo-login">
+    <h1>Tripify</h1>
+
+    <div class="tabs">
+        <button onclick="mostrarTab('loginTab')">Login</button>
+        <button onclick="mostrarTab('registroTab')">Registro</button>
+    </div>
+
+    <!-- LOGIN -->
+    <div id="loginTab">
+        <input id="loginUser" placeholder="Usuario">
+        <input id="loginPass" type="password" placeholder="Contraseña">
+        <button class="btn-main" onclick="login()">Ingresar</button>
+    </div>
+
+    <!-- REGISTRO -->
+    <div id="registroTab" class="oculto">
+        <input id="regUser" placeholder="Usuario">
+        <input id="regPass" type="password" placeholder="Contraseña">
+        <button class="btn-main" onclick="registro()">Registrarse</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
