@@ -1,0 +1,211 @@
+/* FONDO TURISTICO */
+.login-body{
+    font-family:'Poppins';
+    margin:0;
+    height:100vh;
+    background: url("img/fondo.jpg") no-repeat center center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* OSCURECER FONDO */
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+}
+
+/* CONTENEDOR */
+.login-container{
+    position:relative;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    color:white;
+    width:300px;
+    z-index:1;
+}
+
+/* LOGO */
+.logo-login{
+    width:90px;
+    margin-bottom:10px;
+    animation:logoAnim 2s infinite alternate;
+}
+
+/* ANIMACION LOGO */
+@keyframes logoAnim{
+    from{transform:scale(1);}
+    to{transform:scale(1.1);}
+}
+
+/* INPUTS */
+input{
+    width:90%;
+    padding:10px;
+    margin:8px;
+    border-radius:10px;
+    border:none;
+}
+
+/* BOTONES */
+.btn-main{
+    padding:10px;
+    background:#00c6ff;
+    border:none;
+    border-radius:10px;
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.btn-main:hover{
+    background:#0072ff;
+    color:white;
+}
+
+/* TABS */
+.tabs button{
+    margin:5px;
+    padding:8px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+/* OCULTAR */
+.oculto{
+    display:none;
+}
+
+/* ANIMACION */
+.fade-in{
+    animation:fadeIn 1.5s;
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+/* NAVBAR */
+.navbar{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ background:#0f172a;
+ padding:10px 20px;
+ color:white;
+}
+
+.nav-left{
+ display:flex;
+ align-items:center;
+ gap:10px;
+}
+
+.logo{
+ width:50px;
+}
+
+.nav-center{
+ font-weight:bold;
+}
+
+.nav-right button{
+ margin:5px;
+ padding:8px;
+ border:none;
+ border-radius:8px;
+ cursor:pointer;
+ background:#00c6ff;
+}
+
+.nav-right button:hover{
+ background:#0072ff;
+ color:white;
+}
+
+/* GRID */
+.grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+ gap:20px;
+ padding:20px;
+}
+
+/* CARD */
+.card{
+ position:relative;
+ background:white;
+ color:black;
+ border-radius:15px;
+ overflow:hidden;
+ transition:0.3s;
+}
+
+.card img{
+ width:100%;
+ height:180px;
+ object-fit:cover;
+}
+
+/* EFECTO HOVER */
+.card-overlay{
+ position:absolute;
+ top:0;
+ left:0;
+ width:100%;
+ height:100%;
+ background:rgba(0,0,0,0.7);
+ color:white;
+ opacity:0;
+ transition:0.3s;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ padding:10px;
+}
+
+.card:hover .card-overlay{
+ opacity:1;
+}
+
+/* BOTON PDF */
+.btn-pdf{
+ margin:10px;
+ padding:10px;
+ background:red;
+ color:white;
+ border:none;
+ border-radius:10px;
+}
+
+/* MODAL */
+.modal{
+ position:fixed;
+ top:0;
+ left:0;
+ width:100%;
+ height:100%;
+ background:rgba(0,0,0,0.6);
+ display:flex;
+ justify-content:center;
+ align-items:center;
+}
+
+.modal-content{
+ background:white;
+ color:black;
+ padding:20px;
+ border-radius:10px;
+ text-align:center;
+}
+
+.oculto{
+ display:none;
+}
