@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tripify - Lugares</title>
+<link rel="stylesheet" href="estilos.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- 🔥 NAVBAR -->
+<header class="navbar">
+    <div class="nav-left">
+        <img src="img/logo.png" class="logo">
+        <h2>Tripify</h2>
+    </div>
+
+    <div class="nav-center">
+        <span id="usuarioActivo"></span>
+    </div>
+
+    <div class="nav-right">
+        <button onclick="mostrarAyuda()">❓ Ayuda</button>
+        <button onclick="eliminarCuenta()">🗑️ Eliminar cuenta</button>
+        <button onclick="logout()">🚪 Cerrar sesión</button>
+    </div>
+</header>
+
+<h1>🌍 Lugares turísticos de Colombia</h1>
+
+<button class="btn-pdf" onclick="exportarPDF()">📄 Exportar PDF</button>
+
+<div id="contenedor" class="grid"></div>
+
+<!-- MODAL AYUDA -->
+<div id="modalAyuda" class="modal oculto">
+    <div class="modal-content">
+        <h2>Soporte Técnico</h2>
+        <p>Si tienes problemas contacta:</p>
+        <p>📧 soporte@tripify.com</p>
+        <p>📞 300 123 4567</p>
+        <button onclick="cerrarAyuda()">Cerrar</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</body>
+</html>
